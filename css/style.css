@@ -68,7 +68,7 @@ main {
     color: #011627;
 }
 
-.bomb {
+.bomb_active {
     background-color: red;
     color: #011627;
 }
