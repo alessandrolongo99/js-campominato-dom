@@ -4,6 +4,8 @@ const button = document.getElementById('my_button');
 
 const selection = document.getElementById('selection');
 
+const points = document.getElementById('points');
+
 let bombs = [];
 
 button.addEventListener('click', function () {
@@ -11,6 +13,8 @@ button.addEventListener('click', function () {
     document.getElementById('container').style.display = 'flex';
 
     container.innerHTML = null;
+
+    points.style.display = 'none';
 
     if (selection.value == 0) {
         bombs = generateRandomNumber(49);
@@ -31,6 +35,8 @@ button.addEventListener('click', function () {
                         newSquare.classList.add('bomb_active');
                         stop = true;
                         console.log('HAI PERSO!');
+                        points.innerHTML = `HAI PERSO! PUNTEGGIO: ${counter}`;
+                        points.style.display = 'block';
                     } else {
                         newSquare.classList.add('activated');
 
@@ -40,6 +46,8 @@ button.addEventListener('click', function () {
                     if (counter == (49 - 16)) {
                         win = true;
                         console.log('HAI VINTO!');
+                        points.innerHTML = `HAI VINTO! PUNTEGGIO: ${counter}`;
+                        points.style.display = 'block';
                     }
                 }
             });
@@ -69,6 +77,8 @@ button.addEventListener('click', function () {
                         newSquare.classList.add('bomb_active');
                         stop = true;
                         console.log('HAI PERSO!');
+                        points.innerHTML = `HAI PERSO! PUNTEGGIO: ${counter}`;
+                        points.style.display = 'block';
                     } else {
                         newSquare.classList.add('activated');
 
@@ -78,6 +88,8 @@ button.addEventListener('click', function () {
                     if (counter == (81 - 16)) {
                         win = true;
                         console.log('HAI VINTO!');
+                        points.innerHTML = `HAI VINTO! PUNTEGGIO: ${counter}`;
+                        points.style.display = 'block';
                     }
                 }
             });
@@ -107,6 +119,8 @@ button.addEventListener('click', function () {
                         newSquare.classList.add('bomb_active');
                         stop = true;
                         console.log('HAI PERSO!');
+                        points.innerHTML = `HAI PERSO! PUNTEGGIO: ${counter}`;
+                        points.style.display = 'block';
                     } else {
                         newSquare.classList.add('activated');
 
@@ -116,6 +130,8 @@ button.addEventListener('click', function () {
                     if (counter == (100 - 16)) {
                         win = true;
                         console.log('HAI VINTO!');
+                        points.innerHTML = `HAI VINTO! PUNTEGGIO: ${counter}`;
+                        points.style.display = 'block';
                     }
                 }
             });

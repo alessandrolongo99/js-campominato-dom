@@ -13,19 +13,31 @@
 </head>
 
 <body>
+    <header class="flex_container">
+        <h1>Campo Minato</h1>
+
+        <div>
+            <select name="difficulty" id="selection" class="inputs">
+                <option value="0">Livello 1</option>
+                <option value="1">Livello 2</option>
+                <option value="2">Livello 3</option>
+            </select>
+
+            <button id="my_button" class="inputs">Play!</button>
+        </div>
+    </header>
+
     <main>
-        <select name="difficulty" id="selection" class="inputs">
-            <option value="0">Livello 1</option>
-            <option value="1">Livello 2</option>
-            <option value="2">Livello 3</option>
-        </select>
-
-        <button id="my_button" class="inputs">Genera griglia</button>
-
         <div id="container">
 
         </div>
     </main>
+
+    <footer>
+        <div id="points">
+    
+        </div>
+    </footer>
 
     <script src="./js/main.js"></script>
     <!-- <script src="./js/main-2.js"></script> -->
